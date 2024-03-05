@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+/>
+<style>
+body{
+    display: block;
+    overflow-x: hidden;
+}
+
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-brand{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #683aa4;
+}
+
+nav ul li a{
+ 	font-size: 22px;
+    margin: auto 25px;
+    
+}
+
+nav ul li a:hover{
+    color: #cc6600;
+}
+
+.navbar a{
+    color: yellow !important; /* Change 'red' to the desired color */
+    /* Additional styles can be added as needed */
+    font-weight:bolder;
+    font-size:25px;
+}
+#lg{
+	color:white !important;
+	font-size:35px;
+	
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:#B7E5B4;
+}
+ 
+section h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #683aa4;
+    text-align: left;
+    margin-bottom: 20px;
+} 
+
+section p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#b{
+width:200px;
+}
+
+
+#mainid .col{
+    justify-content: start;
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+#mainid img{
+    width: 110%;
+    margin-top:1%;
+    border-radius: 8px;
+    border: 2px solid #024249;
+    
+}
+
+/* Styling for the cards */
+#mainid .card{
+    box-shadow: 3px 1px 16px black;
+    border: 4px solid black;
+    text-align: center;
+}
+
+ #mainid .cards .card{
+    width: 18rem;
+}
+
+#mainid .icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+button #reg{
+	margin-bottom: 10px;
+	background-color: black;
+	color: orange;
+	font-weight: bolder;
+	border:2px solid black;
+}
+</style>
+
+<meta charset="ISO-8859-1">
+<title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+<a  id="lg" class="navbar-brand" href="#">The Quiz App</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="/home">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/tests">Topics</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Learn</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/contact">Get in Touch</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://drive.google.com/drive/folders/1akBt9pAcBSnT3hxzATW29TQENVL1xA6V?usp=sharing">Refer Note's</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+ <section id="mainid">
+              <div class="container">
+                  <div class="row">
+                      <div class="col">
+                          <h2 style="font-weight:bold;color:#151D3B;font-family:Chewy;font-weight:bolder">Hey Dude, feeling up for a challenge? <br><span style="font-size:25px;color:#810000;font-family:Droid Sans;">How about a quick quiz showdown? Are you in?</span></h2>
+                          <p></p>
+                          
+                          <a id="b" href="/tests"><button type="button" class="btn " style="background:black;color:white;height:52px;text-align:center;width:150px;font-weight:bolder">Start Quiz</button></a>
+                       </div>
+                       <div class="col">
+                           <img src="views/pl.jpg" alt="...">
+<p></p>                           
+                       </div>
+                  </div>
+                  <div class="row cards" >
+                      <div class="col-md-4 d-flex justify-content-center" >
+                        <div class="card" style="background:#FFDD95">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                                <h5 class="card-title" style="font-weight:bolder">New Hackathons</h5>
+                                <p class="card-text">Hackathons faster rapid innovation and creativity, enabling participants to sharpen technical skills and collaborate effectively.</p>
+                            	<a href="https://leetcode.com/contest/biweekly-contest-124/"><button id="reg" type="submit" class="btn btn-dark btn-sm" style="color:#000D6B;background:#B4B4B8;font-weight:bold;border:2px solid black">Register
+									</button></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card" style="background:#FFDD95">
+                            <div class="card-body">
+                                <!-- here is where they add the ICON -->
+                                <h5 class="card-title" style="font-weight:bolder">Past Hackathons</h5>
+                                <p class="card-text">By reviewing and reflecting on past hackathons, participants gain insights into successful strategies and identify areas for improvement</p>
+                           <a href="https://leetcode.com/contest/weekly-contest-383/"><button id="reg" type="submit" class="btn btn-dark btn-sm" style="color:#000D6B;background:#B4B4B8;font-weight:bold;border:2px solid black">Practice
+									</button></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card" >
+                            <div class="card-body" style="background:#FFDD95 ;font-weight:bolder">
+                                <!-- here is where they add the ICON -->
+                                <h5 class="card-title" style="font-weight:bolder" >Live Hackathons</h5>
+                                <p class="card-text">Live hackathons serve as dynamic platforms, promoting teamwork, creativity, and the rapid development of impactful projects.</p>
+                            <a href="https://leetcode.com/contest/weekly-contest-259/"><button id="reg" type="submit" class="btn btn-dark btn-sm" style="color:#000D6B;background:#B4B4B8;border:2px solid black;font-weight:bold">Do it Now
+									</button></a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <footer class="text-center bg-body-tertiary" style="background:black">
+  <!-- Grid container -->
+  <div class="container pt-2">
+  
+    <!-- Section: Social media -->
+    <section class="mb-4" style="height:300px">
+     <h4 sytle="font-weight:bold; color:black;margin-top:0%">Join Us on the Learning Journey!</h4>
+   
+      <!-- Facebook -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f fa-lg" style="color:#316FF6"></i
+      ></a>
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://www.instagram.com/vb_on_ig/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram fa-lg" style="color: #d62976"></i
+      ></a>
+      
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://twitter.com/Vasant_77"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter fa-lg"></i
+      ></a>
+
+
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://github.com/mrvanny"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github fa-lg" style="color:black"></i
+      ></a>
+
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://www.linkedin.com/in/vasant-bhosale-b15698283/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin fa-lg"></i
+      ></a>
+      
+<p style="height:50px; width:80%;margin-left:10%;font-weight:bolder;border-radius:10px">
+We invite you to explore, learn, and have fun with The Quiz App. Whether you're a casual player or a dedicated quizzer, there's always something new to discover. Join us on this exciting learning journey, and let's quiz it up together!
+<br><span style="font-weight:bolder">Contact: 9210291020 || Email :thequizapp@gmail.com</span>
+</p>
+    </section>
+    <div class="text-centre" style="color:white;">
+    2024 Copyright India All Rights are Reserved:
+    <a class="text-body" href="" style="color:white">The Quiz App</a>
+  </div>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  
+  <!-- Copyright -->
+</footer>
+</body>
+</html>

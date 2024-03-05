@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<style>
+body {
+	display: block;
+	overflow-x: hidden;
+}
+
+.navbar-brand img {
+	max-height: 50px;
+}
+
+.navbar-brand {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #683aa4;
+}
+
+nav ul li a {
+	font-size: 22px;
+	margin: auto 25px;
+}
+
+nav ul li a:hover {
+	color: #cc6600;
+}
+
+.navbar a {
+	color: yellow !important; /* Change 'red' to the desired color */
+	/* Additional styles can be added as needed */
+	font-weight: bolder;
+}
+
+#lg {
+	color: white !important;
+}
+
+section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: black;
+}
+
+#hero .col {
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+}
+
+#hero .img-col {
+	justify-content: flex-end;
+	margin-top: 100px;
+}
+
+#hero img {
+	max-width: 130%;
+	width: 130%;
+	height: 100%;
+}
+
+/* Styling for the cards */
+#hero .card {
+	box-shadow: 2px 0px 18px #f9f9f9;
+	border: 5px solid white;
+	text-align: center;
+	margin-top: 10px;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/* 	   background-image: linear-gradient(to right, rgba(255, 20, 147, 1.0), rgba(173, 216, 230, 1.0));
+ */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#hero .cards .card {
+	width: 18rem;
+}
+
+/* Styling for icon if you add them */
+#hero .icon {
+	width: 120px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+#hero button {
+	margin-bottom: 10px;
+	background-color: black;
+	color: orange;
+	font-weight: bolder;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		<div class="container-fluid">
+			<a id="lg" class="navbar-brand" href="#">The Quiz App</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="/home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tests">Topics</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Learn</a></li>
+					<li class="nav-item"><a class="nav-link" href="/contact">Get in Touch</a>
+					</li>
+							<li class="nav-item">
+			<a class="nav-link" href="https://drive.google.com/drive/folders/1akBt9pAcBSnT3hxzATW29TQENVL1xA6V?usp=sharing">Refer Note's</a>
+			</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section id="hero">
+		<div class="container">
+
+			<div class="row cards">
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card">
+						<div class="card-body">
+							<!-- here is where they add the ICON -->
+							<img id="ig" src="views/java-logo.png" alt="..." class="icon">
+							<h5 class="card-title">JAVA</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+
+							<form action="/tests/javatest">
+								<button type="submit" class="btn btn-dark btn-sm">Start
+									Test</button>
+							</form>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card">
+						<div class="card-body">
+							<!-- here is where they add the ICON -->
+							<img src="views/python-logo.png" alt="..." class="icon">
+							<h5 class="card-title">PYTHON</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<form action="/tests/pythontest">
+								<button type="submit" class="btn btn-dark btn-sm">Start
+									Test</button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card">
+						<div class="card-body">
+							<!-- here is where they add the ICON -->
+							<img src="views/angular.png" alt="..." class="icon">
+							<h5 class="card-title">ANGULAR</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<form action="/tests/angulartest">
+								<button type="submit" class="btn btn-dark btn-sm">Start
+									Test</button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card">
+						<div class="card-body">
+							<!-- here is where they add the ICON -->
+							<img src="views/spring-boot-logo.png" alt="..." class="icon">
+							<h5 class="card-title">SPRING BOOT</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<form action="/tests/springtest">
+								<button type="submit" class="btn btn-dark btn-sm">Start
+									Test</button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card">
+						<div class="card-body">
+							<!-- here is where they add the ICON -->
+							<img src="views/web.png" alt="..." class="icon">
+							<h5 class="card-title">WEB DEVELOPMENT</h5>
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<form action="/tests/webdevtest">
+								<button type="submit" class="btn btn-dark btn-sm">Start
+									Test</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card">
+						<div class="card-body">
+							<!-- here is where they add the ICON -->
+							<img src="views/SQL.png" alt="..." class="icon">
+							<h5 class="card-title">SQL</h5>
+
+							<p class="card-text">Some quick example text to build on the
+								card title and make up the bulk of the card's content.</p>
+							<form action="/tests/sqltest">
+								<button type="submit" class="btn btn-dark btn-sm">Start
+									Test</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

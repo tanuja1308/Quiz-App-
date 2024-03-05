@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<style>
+body {
+	background-color: black
+}
+/* .card{
+flex-direction:column;
+justify-content: flex-end;
+align-items: flex-end
+} */
+span {
+	font-weight: bolder
+}
+
+input {
+	height: 15px;
+	width: 25px;
+}
+
+button {
+	width: 160px;
+	height: 60px;
+	margin-left: 80%; /* Align button to the right */
+	margin-bottom: 3%;
+	font-weight: bold;
+	color: black;
+	border: 3px solid black;
+	border-radius: 7px;
+	background-color: green;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: black;
+	border: 3px solid white;
+	color: white
+}
+</style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+
+	<form action="/javacal" method="post">
+
+		<div class="card"
+			style="margin-top: 50px; width: 50rem; height: 25rem; background-color: #F8E559; overflow: auto;">
+			<div class="card-body ">
+				<h5 class="card-title">Java Quiz...</h5>
+				<div th:each="record : ${r}">
+					<span th:text="${record.quesId}+ ]"></span><span th:text="${
+					record.title}"></span> <br>
+					 <input type="radio" th:name="'answer_' + ${record.quesId}" th:value="${record.optionA}"><span
+						th:text="${record.optionA}"></span> <br> 
+						<input type="radio" th:name="'answer_' + ${record.quesId}" th:value="${record.optionB}"><span
+						th:text="${record.optionB}"></span><br> <input type="radio"
+						th:name="'answer_' + ${record.quesId}" th:value="${record.optionC}"><span
+						th:text="${record.optionC}"></span> <br> <br>
+			<span th:text="'answer_' + ${record.quesId}"></span>
+
+				</div>
+			</div>
+
+<button type="submit">submit</button>
+		</div>
+	</form>
+
+</body>
+</html>

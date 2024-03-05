@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"><
+<style>
+h1, h2, h3, h4, h5, h6{
+      color: #000;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+#fh5co-main {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+body{
+background:black
+}
+h3{
+font-weight:bolder;
+font-family:Papyrus;
+}
+.main{
+height:600px;
+width:1200px;
+background:white;
+border:3px solid black; 
+margin-left:10%;
+border-radius:20px;
+}
+#fh5co-main .fh5co-narrow-content {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em 0;
+;
+}
+.form-control{
+
+    background: transparent;
+    border: 2px solid grey;
+    height: 54px !important;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+#message {
+    height: 130px !important;
+}
+.btn.btn-md {
+    padding: 10px 25px !important;
+}
+.btn-primary {
+    background: #da1212 !important;
+    color: #fff !important;
+    border: 2px solid #da1212 !important;
+  border-radius: 7px !important;
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+<div id="fh5co-main">
+<div class="fh5co-narrow-content animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+				
+				<div class="row">
+					<div class="col-md-8 ">
+						<h3>Connect With Us....</h3>
+					</div>
+          
+				</div>
+        <br /><br />
+				<form action="/savecon" method="post">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" name="uname"class="form-control" placeholder="Your Name">
+									</div>
+									<div class="form-group">
+										<input type="text" name="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input type="text" name="phoneno" class="form-control" placeholder="Phone">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea id="message" name="feedback" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+									</div>
+									<div class="form-group">
+										<input type="submit" class="btn btn-primary btn-md" value="Send Message">
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+
+</head>
+<body>
+
+    <iframe src="views/navbar.html" width="100%" height="100%" frameborder="0"></iframe>
+
+ <table>
+    <thead>
+        <tr>
+            <th>Question ID</th>
+            <th>Title</th>
+            <th>Option A</th>
+            <th>Option B</th>
+            <th>Option C</th>
+        </tr>
+    </thead>
+		<tbody>
+         <tr th:each="record : ${r}">
+            <td th:text="${record.getTitle}"></td>
+            <td th:text="${record.title}"></td>
+            <td th:text="${record.getOptionA}"></td>
+            <td th:text="${record.optionB}"></td>
+            <td th:text="${record.optionC}"></td>
+        </tr>
+    </tbody>
+</table>
+ 
+
+ </body>
+</html>
